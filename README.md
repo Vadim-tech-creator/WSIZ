@@ -1,1 +1,1 @@
-# WSIZ
+# This project is a registration form for event
