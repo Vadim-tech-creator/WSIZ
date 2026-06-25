@@ -1,5 +1,7 @@
 const registration = document.querySelector("#register");
 const res = document.querySelector("#message");
+const participantsArray = [];
+const participantCount = document.getElementById("participant-count");
 registration.addEventListener("submit", function(event){
     event.preventDefault();
     const user = document.getElementById("user");
@@ -37,6 +39,32 @@ registration.addEventListener("submit", function(event){
         return;
     }
     alert(`${user.value.trim()} registered for the event.\n Technology :${field_technology.value.trim()}.\n Age :${age.value.trim()}`)
+    const participant = {
+        name: user.value.trim(),
+        email: email.value.trim(),
+        age: age.value.trim(),
+        field: field_technology.value.trim()
+    };
+
+    participantsArray.push(participant);
+    participantCount.textContent = participantsArray.length;
+    Participant(participant);
+    registration.reset();
 })
+
+function Participant(participant) {
+    const list = document.getElementById("participant-list");
+    const listItem = document.createElement("li");
+    listItem.innerHTML = `
+        <strong>Name:</strong> ${participant.name} <br> 
+        <strong>Email:</strong> ${participant.email} <br> 
+        <strong>Age:</strong> ${participant.age} <br> 
+        <strong>Field of study:</strong> ${participant.field}
+        <hr>
+    `;
+    list.appendChild(listItem);
+}
+
+
 
 

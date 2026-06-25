@@ -51,7 +51,38 @@ header{
     height: 45px;
     width: 100%;
 }
-
 .submit:hover{
     background-color: #a9e4ef;
+}
+#participant {
+    max-width: 500px;
+    margin: 30px auto;
+    font-family: sans-serif;
+}
+#participant h3 {
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    color: #a9e4ef;;
+}
+#participant-count {
+    color: #e8ecef;
+}
+#participant-list {
+    list-style: none;
+    padding: 0;
+}
+#participant-list li {
+    background: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+#participant-list li strong {
+    display: inline-block;
+    width: 110px;
+}
+#participant-list li hr {
+    display: none;
 }
