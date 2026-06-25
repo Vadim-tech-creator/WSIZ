@@ -30,9 +30,11 @@ header{
 }
 .input-field .input{
     height: 45px;
-    width: 87%;
     border-radius: 30px;
     padding: 0 0 0 42px;
+}
+.input-field input:focus{
+    border: 5px;
 }
 .confirmation{
     display: flex;
