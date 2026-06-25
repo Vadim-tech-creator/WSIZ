@@ -7,21 +7,21 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
+    <form class="container" id="register">
         <div class="top-header">
             <header>Registration on Site</header>
         </div>
         <div class="input-field">
-            <input type="text" class="input" placeholder="User" required>
+            <input type="text" class="input" id="user" placeholder="User">
         </div>
          <div class="input-field">
-            <input type="text" class="input" placeholder="Email" required>
+            <input type="text" class="input" id="email" placeholder="Email">
         </div>
         <div class="input-field">
-            <input type="number" class="input" placeholder="Age" required>
+            <input type="number" class="input" id="age" placeholder="Age">
         </div>
         <div class="input-field">
-            <input type="text" class="input" placeholder="Field for technology" required>
+            <input type="text" class="input" id="technology" placeholder="Field for technology">
         </div>
         <div class="confirmation">
             <input type="checkbox" id="check">
@@ -30,7 +30,8 @@
         <div class="input-field">
             <input type="submit" class="submit" value="confirm">
         </div>
-    </div>
+        <div id="message"></div>
+    </form>
     <script src="./script.js"></script>
 </body>
 </html>
